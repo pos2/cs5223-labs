@@ -10,4 +10,9 @@ public final class AMOCommand implements Command {
   private final int sequenceNum;
   private final Address addr;
   private final Command command;
+
+  @Override
+  public String toString() {
+    return "AMOCommand{seqNum=" + sequenceNum + " addr=" + addr.toString() + " command=" + command().toString() + "}";
+  }
 }
